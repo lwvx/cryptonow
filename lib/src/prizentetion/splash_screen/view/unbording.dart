@@ -72,9 +72,9 @@ class _UnbordingState extends State<Unbording> {
                             padding: EdgeInsets.only(top: 11.sp),
                             child: Text(
                               contents[i].discripton,
-                              style: const TextStyle(
+                              style: TextStyle(
                                 color: Colors.white54,
-                                fontSize: 15,
+                                fontSize: 16.sp,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -123,9 +123,9 @@ class _UnbordingState extends State<Unbording> {
                         _currentPage == contents.length - 1
                             ? 'Start'
                             : 'Continue',
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.white,
-                          fontSize: 16,
+                          fontSize: 16.sp,
                           fontWeight: FontWeight.w700,
                         ),
                       ),

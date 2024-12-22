@@ -93,9 +93,9 @@ class _ChooseCryptoState extends State<ChooseCrypto> {
                             SizedBox(width: 3.w),
                             Text(
                               Code[i].text,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 15,
+                                  fontSize: 15.sp,
                                   fontWeight: FontWeight.w400),
                             ),
                             const Spacer(),

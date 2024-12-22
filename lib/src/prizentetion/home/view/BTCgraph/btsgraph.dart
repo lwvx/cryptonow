@@ -24,11 +24,11 @@ class Btsgraph extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(left: 36.sp),
-                child: const Text(
+                child: Text(
                   'BTC graph',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

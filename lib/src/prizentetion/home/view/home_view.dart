@@ -14,11 +14,11 @@ class HomeView extends StatelessWidget {
         backgroundColor: const Color(0xff04091D),
         title: Row(
           children: [
-            const Text(
+            Text(
               'Converter',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 20.sp,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -70,16 +70,16 @@ class HomeView extends StatelessWidget {
                 color: Color(0xff3366FF),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(
+              child: Icon(
                 Icons.swap_vert,
                 color: Colors.white,
-                size: 25,
+                size: 21.sp,
               ),
             ),
           ),
         ],
       ),
-      bottomNavigationBar:  CalculatorWidget(),
+      bottomNavigationBar: const CalculatorWidget(),
     );
   }
 }

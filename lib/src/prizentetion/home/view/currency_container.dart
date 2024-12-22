@@ -40,9 +40,9 @@ class CurrencyContainer extends StatelessWidget {
                   ),
                   Text(
                     currencyName,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
@@ -53,9 +53,9 @@ class CurrencyContainer extends StatelessWidget {
               ),
               Text(
                 amount,
-                style: const TextStyle(
-                  color: Color(0xff666666),
-                  fontSize: 24,
+                style: TextStyle(
+                  color: const Color(0xff666666),
+                  fontSize: 19.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -76,7 +76,7 @@ class CryptoContainer extends StatelessWidget {
     super.key,
     required this.amount,
     required this.imagePath,
-    required this.currencyName, 
+    required this.currencyName,
   });
 
   @override
@@ -105,9 +105,9 @@ class CryptoContainer extends StatelessWidget {
                   ),
                   Text(
                     currencyName,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
@@ -134,9 +134,9 @@ class CryptoContainer extends StatelessWidget {
               ),
               Text(
                 amount,
-                style: const TextStyle(
-                  color: Color(0xff666666),
-                  fontSize: 24,
+                style: TextStyle(
+                  color: const Color(0xff666666),
+                  fontSize: 19.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),

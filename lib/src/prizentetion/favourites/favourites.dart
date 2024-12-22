@@ -1,4 +1,4 @@
-import 'package:cryptonow/src/prizentetion/add_favourite/addfavourite.dart';
+import 'package:cryptonow/src/prizentetion/favourites/add_favourite/addfavourite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -14,11 +14,11 @@ class Favourites extends StatelessWidget {
         backgroundColor: const Color(0xff04091D),
         title: Row(
           children: [
-            const Text(
+            Text(
               'Favourites',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 20.sp,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -33,19 +33,19 @@ class Favourites extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 'No favourites',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 28,
+                  fontSize: 22.sp,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const Text(
+              Text(
                 'Add new favourite info to fill up this screen',
                 style: TextStyle(
                   color: Colors.white38,
-                  fontSize: 13,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -57,7 +57,7 @@ class Favourites extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const Addfavourite()));
+                          builder: (context) => const AddFavourite()));
                 },
                 child: Container(
                   height: 7.h,
@@ -66,12 +66,12 @@ class Favourites extends StatelessWidget {
                     color: const Color(0xff4674FF),
                     borderRadius: BorderRadius.circular(40),
                   ),
-                  child: const Center(
+                  child: Center(
                     child: Text(
                       'Add favourite',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

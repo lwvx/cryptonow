@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -41,24 +40,32 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
         itemCount: 12,
         itemBuilder: (context, index) {
           final buttonValues = [
-            '1', '2', '3',
-            '4', '5', '6',
-            '7', '8', '9',
-            '.', '0', '<' // Пустое место вместо '='
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '.',
+            '0',
+            '<'
           ];
           final buttonValue = buttonValues[index];
 
           if (buttonValue.isEmpty) {
-            return const SizedBox.shrink(); // Пустое место
+            return const SizedBox.shrink();
           }
 
           return TextButton(
             onPressed: () => _buttonPressed(buttonValue),
             child: Text(
               buttonValue,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 20.sp,
               ),
             ),
           );
